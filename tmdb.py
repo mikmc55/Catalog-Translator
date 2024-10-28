@@ -20,7 +20,7 @@ async def get_tmdb_data(client: httpx.AsyncClient, imdb_id: str) -> dict:
     params = {
         "external_source": "imdb_id",
         "language": "fr-FR",
-        "api_key": "6f5528da1d383de1b85c80756d82372e"
+        "api_key": TMDB_API_KEY
     }
 
     headers = {
